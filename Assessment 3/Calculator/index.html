@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+     <title>Calculator</title>
+     <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/Calculator/css/cal.css">
+     <script src="/Calculator/js/cal.js"></script>
+   </head> 
+   <!-- create table -->
+   <body> 
+      <div class="calculator card">
+
+            <input type="text" class="calculator-screen z-depth-1" value="" id="result" disabled/>
+        
+            <div class="calculator-keys">
+        
+              <button type="button" class="operator btn btn-info" value="+"  onclick="dis('+')">+</button>
+              <button type="button" class="operator btn btn-info" value="-"  onclick="dis('-')">-</button>
+              <button type="button" class="operator btn btn-info" value="*" onclick="dis('*')">&times;</button>
+              <button type="button" class="operator btn btn-info" value="/"  onclick="dis('/')">&divide;</button>
+        
+              <button type="button" value="7" class="btn btn-light waves-effect" onclick="dis('7')">7</button>
+              <button type="button" value="8" class="btn btn-light waves-effect" onclick="dis('8')">8</button>
+              <button type="button" value="9" class="btn btn-light waves-effect" onclick="dis('9')">9</button>
+        
+        
+              <button type="button" value="4" class="btn btn-light waves-effect" onclick="dis('4')">4</button>
+              <button type="button" value="5" class="btn btn-light waves-effect" onclick="dis('5')">5</button>
+              <button type="button" value="6" class="btn btn-light waves-effect" onclick="dis('6')">6</button>
+        
+        
+              <button type="button" class="btn btn-light waves-effect" value="1" onclick="dis('1')">1</button>
+              <button type="button" class="btn btn-light waves-effect" value="2" onclick="dis('2')">2</button>
+              <button type="button" class="btn btn-light waves-effect" value="1" onclick="dis('3')">3</button>
+        
+        
+              <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+              <button type="button" class="decimal  btn btn-secondary" value="."  onclick="dis('.')">.</button>
+              <button type="button" class="all-clear  btn btn-danger btn-sm" value="c" onclick="clr()">C</button>
+        
+              <button type="button" class="equal-sign operator btn btn-default" value="=" onclick="solve()">=</button>
+        
+            </div>
+          </div>
+      <script src="/js/jquery-3.4.1.js"></script>
+      <script src="/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+   </body> 
+</html>    

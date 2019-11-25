@@ -1,0 +1,10 @@
+package com.music;
+
+public class MusicInfo {
+	private int songId;
+	private String songTitle;
+	private String artistName;
+	private String albumName;
+	private String songLocation;
+	private String description;
+}
