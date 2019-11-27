@@ -1,0 +1,17 @@
+package program2;
+
+import java.util.function.Supplier;
+
+public class TestFood {
+public static void main(String[] args) {
+	
+	System.out.println("Enter your choice");
+	System.out.println("1. Lays");
+	System.out.println("2. Bingo");
+	System.out.println("3. Kurkure");
+	
+	Supplier<Food> fn = () -> new Food("Kurkure");
+	Food f=fn.get();
+	System.out.println(f.name);
+}
+}

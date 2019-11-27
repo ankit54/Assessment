@@ -1,0 +1,10 @@
+package program2;
+
+import java.util.function.Supplier;
+
+public class TestFood {
+public static void main(String[] args) {
+	Supplier<Food> fn = () -> new Food("Kurkure");
+	fn.get();
+}
+}

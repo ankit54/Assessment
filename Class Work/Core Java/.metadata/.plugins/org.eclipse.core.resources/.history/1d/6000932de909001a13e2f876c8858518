@@ -1,0 +1,53 @@
+package program5;
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import program1.Animal;
+import program1.Cow;
+import program1.Lion;
+
+public class CountObjects {
+	
+
+	public static void main(String[] args) {
+		Animal c1=new Cow();
+		Animal c2=new Cow();
+		Animal l1=new Lion();
+		Animal l2=new Lion();
+		Animal l3=new Lion();
+		
+		List<Animal> al=new ArrayList<Animal>();
+		al.add(c1);
+		al.add(c2);
+		al.add(l1);
+		al.add(l2);
+		al.add(l3);
+		
+		count(al);
+		
+		
+		
+	}
+
+	private static void count(List<Animal> li) {
+		Map<Animal, Integer> map=new HashMap<Animal, Integer>();
+		for (Animal animal : li) {
+			System.out.println(animal);
+		}
+		for (Map.Entry<Animal, Integer> val : map.entrySet()) { 
+            System.out.println("Element " + val.getKey() + " "
+                               + "occurs"
+                               + ": " + val.getValue() + " times"); 
+        } 
+		
+	}
+
+	
+}

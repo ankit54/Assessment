@@ -1,0 +1,22 @@
+package com.manthan.readFiles;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ReadFile {
+
+	public static void main(String[] args) {
+		try {
+			FileInputStream fin=new FileInputStream("writeUsingChar.txt");
+			System.out.println(fin.read());
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

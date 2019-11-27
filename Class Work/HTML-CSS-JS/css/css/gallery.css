@@ -1,0 +1,21 @@
+img{
+    width: 250px;
+    height: 218px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 9px;
+    box-shadow: 0px 0px 20px gray;
+    transition: all 1s;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+img:hover{
+    transform: scale(1.1, 1.1);
+}
+body{
+    background-image: url(/images/images21.jpg);
+    background-size: cover;
+
+}

@@ -1,0 +1,16 @@
+package program3;
+
+import java.util.Collections;
+
+public class ArrayList implements Colloection {
+
+	@Override
+	public Collections returnColl() {
+		java.util.ArrayList<Integer> al=new java.util.ArrayList<Integer>();
+		al.add(1);
+		al.add(50);
+		al.add(14);
+		return al;
+	}
+
+}

@@ -1,0 +1,11 @@
+package program2;
+
+public class Kurkure implements Food {
+
+	@Override
+	public Food returnFood() {
+		return new Kurkure();
+
+	}
+
+}

@@ -1,0 +1,6 @@
+#Mon Oct 21 16:58:02 IST 2019
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=Select

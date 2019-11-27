@@ -1,0 +1,13 @@
+package program3;
+
+import java.util.Collection;
+
+public class Vector1 implements Collection1 {
+
+	@Override
+	public Collection returnColl() {
+		
+		return null;
+	}
+
+}

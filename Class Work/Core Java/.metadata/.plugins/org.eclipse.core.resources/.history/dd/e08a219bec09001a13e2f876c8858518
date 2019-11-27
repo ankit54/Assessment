@@ -1,0 +1,15 @@
+package program6;
+
+public class Student {
+private int id;
+private String name;
+private char gender;
+private double marks;
+public Student(int id, String name, char gender, double marks) {
+	this.id = id;
+	this.name = name;
+	this.gender = gender;
+	this.marks = marks;
+}
+
+}

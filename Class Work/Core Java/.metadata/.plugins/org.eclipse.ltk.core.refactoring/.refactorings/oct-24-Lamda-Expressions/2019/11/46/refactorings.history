@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Test_Supplier.java&apos; to &apos;Test_Consumer.java&apos;&#x0D;&#x0A;- Original project: &apos;oct-24-Lamda-Expressions&apos;&#x0D;&#x0A;- Original element: &apos;Test_Supplier.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Test_Consumer.java&apos;" description="Rename compilation unit &apos;Test_Supplier.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Test_Supplier.java" name="Test_Consumer.java" references="false" stamp="1573726497839" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+package program2;
+
+public class Kurkure extends Food {
+
+
+public void returnFood() {
+	System.out.println("Kurkure");
+}
+}

@@ -1,0 +1,35 @@
+table,th,td{
+    /* border: 2px solid black;
+    border-collapse: collapse; */
+    padding: 12px;
+
+    
+    
+}
+table{
+    width: 500px;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 100px;
+    font-family: serif;
+    font-size: 18px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+th{
+    background-color: navajowhite; ;
+}
+tr:nth-child(even){
+    background-color:lightseagreen;
+}
+tr:nth-child(odd){
+    background-color: aquamarine;
+}
+body{
+    background-image: url(/images/image8.jpg);
+    background-size: cover;
+}
+td:hover{
+    background-color: lightgray;
+    color:red;
+}

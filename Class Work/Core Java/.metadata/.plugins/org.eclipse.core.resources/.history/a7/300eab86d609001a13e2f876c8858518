@@ -1,0 +1,42 @@
+package program3;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
+import java.util.function.Function;
+
+public class TestColloection {
+	
+
+	public static void main(String[] args) {
+		
+		
+
+		System.out.println("Enter your choice");
+		System.out.println("1. Array List");
+		System.out.println("2. Linked List");
+		System.out.println("3. Vector");
+		
+		Scanner sc=new Scanner(System.in);
+		int input=sc.nextInt();
+		Function<Integer, Collection1> fn = input1 -> {
+			switch (input1) {
+			case 1:
+				Collection1 c1= new ArrayList1();
+				c.returnColl();
+			case 2:
+				Collection1 c2= new ArrayList1();
+				c.returnColl();
+			case 3:
+				Collection1 c3= new ArrayList1();
+				c.returnColl();
+			default:
+				break;
+			}
+		};
+		
+		fn.apply(input)
+
+	}
+
+}

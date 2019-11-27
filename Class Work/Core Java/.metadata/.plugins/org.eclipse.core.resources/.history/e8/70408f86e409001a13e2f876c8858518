@@ -1,0 +1,12 @@
+package program4;
+
+import java.util.HashMap;
+import java.util.HashMap;
+
+public class Train {
+	public static void main(String[] args) {
+		HashMap<Integer, String> train= new HashMap<Integer, String>();
+		
+		
+	}
+}
