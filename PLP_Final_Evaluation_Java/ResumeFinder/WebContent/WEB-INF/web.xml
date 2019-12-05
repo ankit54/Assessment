@@ -14,7 +14,7 @@
       <description>Location to store uploaded file</description> 
       <param-name>file-upload</param-name> 
       <param-value>
-         C:\Users\CBT\Desktop\Resumes\
+         C:/Users/Ankit/Desktop/Resumes
       </param-value> 
    </context-param>
   
@@ -26,6 +26,14 @@
   <servlet-name>Upload</servlet-name>
   <url-pattern>/upload</url-pattern>
   </servlet-mapping>
+  <servlet>
+  <servlet-name>Search</servlet-name>
+  <jsp-file>/search.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Search</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping>
   
   <servlet>
   <servlet-name>Home</servlet-name>
@@ -34,16 +42,6 @@
   <servlet-mapping>
   <servlet-name>Home</servlet-name>
   <url-pattern>/home</url-pattern>
-  </servlet-mapping>
-  
-  
-  <servlet>
-  <servlet-name>Search</servlet-name>
-  <jsp-file>/search.jsp</jsp-file>
-  </servlet>
-  <servlet-mapping>
-  <servlet-name>Search</servlet-name>
-  <url-pattern>/search</url-pattern>
   </servlet-mapping>
   
   

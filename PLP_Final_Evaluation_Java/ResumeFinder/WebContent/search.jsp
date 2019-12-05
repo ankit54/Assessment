@@ -47,7 +47,7 @@
 <div class="col-md-3"></div>
 <div class="col-md-6">
 <h4 class="font-weight-bold text-center">Search Resume</h4><hr>
-<form action="./SearchServlet2" method="post">
+<form action="./SearchServlet" method="post">
           <div class="input-group mb-4">
             <input type="text" name="input" placeholder="What're you searching for?" aria-describedby="button-addon5" class="form-control" required>
             <div class="input-group-append">

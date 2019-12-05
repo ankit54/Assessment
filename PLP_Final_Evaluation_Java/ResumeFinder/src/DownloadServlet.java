@@ -10,26 +10,26 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/DownloadServlet")
 public class DownloadServlet extends HttpServlet {
-   private static final long serialVersionUID = 1L;
-       
-   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      // TODO Auto-generated method stub
-      response.setContentType("text/html");  
-      PrintWriter out = response.getWriter();  
-      String filename = (String) request.getParameter("url");   
-      String filepath = "C:\\Users\\CBT\\Desktop\\Resumes\\";   
-      response.setContentType("APPLICATION/OCTET-STREAM");   
-      response.setHeader("Content-Disposition","attachment; filename=\"" + filename + "\"");
-      
-      //use inline if you want to view the content in browser, helpful for pdf file
-      //response.setHeader("Content-Disposition","inline; filename=\"" + filename + "\"");
-      FileInputStream fileInputStream = new FileInputStream(filepath + filename);  
-                  
-      int i;   
-      while ((i=fileInputStream.read()) != -1) {  
-      out.write(i);   
-      }   
-      fileInputStream.close();   
-      out.close();   
-      }  
-}
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");  
+		PrintWriter out = response.getWriter();  
+		String filename = (String) request.getParameter("url");   
+		String filepath = "C:\\Users\\Ankit\\Desktop\\Resumes\\";   
+		response.setContentType("APPLICATION/OCTET-STREAM");   
+		response.setHeader("Content-Disposition","attachment; filename=\"" + filename + "\"");
+
+		//use inline if you want to view the content in browser, helpful for pdf file
+		//response.setHeader("Content-Disposition","inline; filename=\"" + filename + "\"");
+		FileInputStream fileInputStream = new FileInputStream(filepath + filename);  
+
+		int i;   
+		while ((i=fileInputStream.read()) != -1) {  
+			out.write(i);   
+		}   
+		fileInputStream.close();   
+		out.close();   
+	}  //end of doGet()
+} //end of class
