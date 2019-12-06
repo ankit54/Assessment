@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ShoppingApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>registerForm</servlet-name>
+		<jsp-file>/views/registerForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerForm</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loginForm</servlet-name>
+		<jsp-file>/views/loginForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginForm</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<jsp-file>/views/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>searchProduct</servlet-name>
+		<jsp-file>/views/searchProductForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>searchProduct</servlet-name>
+		<url-pattern>/searchProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>orderProduct</servlet-name>
+		<jsp-file>/views/orderProductForm.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>orderProduct</servlet-name>
+		<url-pattern>/orderProduct</url-pattern>
+	</servlet-mapping>
+  
+</web-app>
